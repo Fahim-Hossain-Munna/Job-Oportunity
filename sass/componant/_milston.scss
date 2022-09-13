@@ -1,0 +1,105 @@
+#milston__section{
+    margin-top: 80px;
+    .milston__part{
+        .counter__up--border{
+              position: relative;
+              &::after{
+                  position: absolute;
+                  bottom: 0;
+                  right: 0;
+                  background: #b9b9b9;
+                  width: 1px;
+                  height: 70%;
+                  content: "";
+                  @include extra__small{
+                    display: none;
+                }
+                @include small{
+                    display: none;
+                  }        
+              }
+              &::before{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                background: #b9b9b9;
+                width: 50%;
+                height: 1px;
+                content: "";
+                @include extra__small{
+                    display: none;
+                }
+                @include small{
+                    display: none;
+                  }
+            }
+        }
+        .counter__up--border2{    
+            position: relative;
+            &::after{
+                position: absolute;
+                top: -5px;
+                left: -29px;
+                background: #b9b9b9;
+                width: 1px;
+                height: 70%;
+                content: "";
+                @include extra__small{
+                    display: none;
+                }
+                @include small{
+                    display: none;
+                  }            
+            }
+            &::before{
+              position: absolute;
+              top: -1px;
+              left: -29px;
+              background: #b9b9b9;
+              width: 50%;
+              height: 1px;
+              content: "";
+              @include extra__small{
+                display: none;
+            }
+            @include small{
+                display: none;
+              }
+            }
+        }
+        .counter__up{
+                padding: 20px;
+                font-family: 'Abril Fatface', cursive;
+                font-size: 46px;
+                font-weight: 400;
+                color: #222222;
+                @include extra__small{
+                    font-size: 26px;
+                }
+           
+            p{
+                font-family: 'Abril Fatface', cursive;
+                font-size: 28px;
+                font-weight: 400;
+                color: #222222;
+                @include extra__small{
+                    font-size: 16px;
+                }        
+            }         
+        }
+    }
+    .partner__part{
+        margin-top: 50px;
+        .partner{
+            width: 150px;
+            height: 100px;
+            border: 1px solid #777777;
+            margin: 10px;        
+            img{
+                width: 50%;
+                height: 100%;
+                margin-left: 40px;
+            }
+        }
+    }
+}

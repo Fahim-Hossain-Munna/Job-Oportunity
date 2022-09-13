@@ -1,0 +1,60 @@
+#work__hire-section{
+    padding: 80px 0;
+    .hire{
+        background: #f1f1f1;
+        padding: 30px;
+        transition: .4s;
+        &:hover{
+            background: linear-gradient(190deg, rgba(3,185,239,1) 0%, rgba(87,210,245,1) 100%, rgba(0,212,255,1) 100%);
+            
+        }
+        &:hover h5{
+            color: #ffffff;
+        }
+        &:hover h6{
+            color: #ffffff;
+        }
+        &:hover p{
+            color: #ffffff;
+        }
+        &:hover a{
+            color: #ffffff;
+        }
+        h5{
+            font-family: 'Arimo', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: #222222;
+            transition: .4s;
+
+        }
+        h6{
+            font-family: 'Arimo', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            color: #03b9ef;
+            padding-top: 10px;
+            transition: .4s;
+            
+        }
+        p{
+            font-family: 'Arimo', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            color: #222222;
+            padding-top: 10px;
+            line-height: 1.5;
+            transition: .4s;
+            
+        }
+        a{
+            font-family: 'Arimo', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: #222222;
+            margin-top: 20px;
+            transition: .4s;
+            
+        }
+    }
+}

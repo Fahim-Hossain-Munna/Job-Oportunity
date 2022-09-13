@@ -1,0 +1,82 @@
+#work__section{
+    background: #f1f1f1;
+    width: 100%;
+    padding: 40px 0 80px 0;
+    .work__after{
+        position: relative;
+        &::after{
+            width: 300px;
+            height: 1px;
+            background: #c4c4c4;
+            position: absolute;
+            top: 25%;
+            left: -162px;
+            transform: translateY(-50%);
+            content: "";
+            @include extra__small{
+                display: none;
+            }
+            @include small{
+                display: none;
+            }
+            @include medium{
+                display: none;
+            }
+        }
+        &::before{
+            width: 300px;
+            height: 1px;
+            background: #c4c4c4;
+            position: absolute;
+            top: 25%;
+            right: -162px;
+            transform: translateY(-50%);
+            content: "";
+            @include extra__small{
+                display: none;
+            }
+            @include small{
+                display: none;
+            }
+            @include medium{
+                display: none;
+            }
+        }
+
+    }
+    .work{
+        text-align: center;
+        padding: 15px;
+        cursor: auto;
+        .work__img{
+            display: inline-flex;
+            background: #ffffff;
+            width: 60px;
+            height: 60px;
+            padding: 5px;
+            justify-content: center;
+            align-items: center;
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.61); 
+            box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.61);
+            transition: .4s;
+            img{
+                width: 80%;
+            }
+        }
+        h4{
+            font-size: 22px;
+            font-weight: 400;
+            color: #292929;
+            padding: 10px 0;
+        }
+        p{
+            font-size: 14px;
+            font-weight: 400;
+            color: #777777;
+            line-height: 1.5;
+        }
+        &:hover .work__img{
+            background: linear-gradient(90deg, rgba(3,185,239,1) 0%, rgba(87,210,245,1) 100%, rgba(0,212,255,1) 100%);
+        }
+    }
+}

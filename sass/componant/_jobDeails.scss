@@ -1,0 +1,153 @@
+#job__details__section{
+    padding-bottom: 50px;
+    .apply{
+        text-align: right;
+        a{
+            display: inline-block;
+            font-family: 'Arimo', sans-serif;
+            font-size: 18px;
+            border: 1px solid #03b9ef;
+            color: #03b9ef !important;
+            border-radius: 3px;
+            padding: 10px;
+            @include extra__small{
+                font-size: 14px;
+            }
+
+        }
+        span{
+            font-family: 'Arimo', sans-serif;
+            font-size: 18px;
+            color: #444444 !important;
+            padding-left: 20px;
+            @include extra__small{
+                font-size: 14px;
+            }
+          
+        }
+    }
+    .jb__dtls__about{
+        .about__job{
+            h3{
+                font-size: 20px;
+                font-weight: 400;
+                color: #222222;
+            }
+            p{
+                font-family: 'Arimo', sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                color: #444444;
+                padding-bottom: 3px;
+            }
+            ul{
+                padding-top: 15px;
+                padding-left: 35px;
+                li{
+                   margin: 10px 0;
+                   span{
+                       margin-left: 25px;
+                   }
+                  i{
+                    margin-right: 8px;
+                    color: #444444;
+                    font-size: 15px;
+                  }
+                }
+            }
+        }
+    }
+    .jb__company__dtls{
+        padding-top: 50px;
+        .company__img{
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            img{
+                width: 100%;
+                height: 100%;
+                display: block;    
+            }
+        }
+        h3{
+            text-align: center;
+            font-size: 22px;
+            font-weight: 400;
+            padding-top: 15px;
+            color: #222222;
+        }
+        ul{
+            text-align: center;
+            padding-top: 25px;
+            li{
+                font-family: 'Arimo', sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                color: #444444;
+                padding-bottom: 3px;
+                i{
+                    font-size: 16px;
+                    color: #777777;
+                    padding-right: 8px;
+                }
+            }
+         
+        }
+        span{
+            a{
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                border: 1px solid #777777;
+                color: #777777 !important;
+                text-align: center;
+                line-height: 40px;
+                background: transparent;
+                margin: 0 2px;
+                transition: .4s;
+                &:hover{
+                    color: #ffffff !important;
+                    background: linear-gradient(90deg, #03b9ef 0%, #57d2f5 100%, #00d4ff 100%);
+                    border-color: #03b9ef;
+                }
+                
+            }
+        }
+        .job__descripe{
+            text-align: left;
+            li{
+                position: relative;
+                margin: 5px 0;
+                span{
+                    padding-left: 50px;
+                    text-align: left;
+              
+                }
+                .colon{
+                    position: absolute;
+                    left: 35px;
+                    top: 0;
+                }
+            }
+        }
+        .text__align--left{
+            text-align: left;
+            .share{
+                font-family: 'Arimo', sans-serif;
+                font-size: 20px;
+                font-weight: 400;
+                color: #03b9ef;
+                padding-left: 0;
+            }
+        }
+      .map{
+          h3{
+              text-align: left;
+              font-family: 'Arimo', sans-serif;
+              font-size: 18px;
+              font-weight: 400;
+              color: #444444;
+          }
+      }
+    }
+}

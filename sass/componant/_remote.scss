@@ -1,0 +1,208 @@
+#remote__section{
+    padding: 80px 0;
+    h4{
+        font-family: 'Arimo', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        color: #222222;
+        padding-bottom: 15px;
+    }
+    .side__bar{
+        img{
+            width: 100%;
+            margin-left: -20px;
+        }
+        margin-bottom: 4px;
+        .text__input{
+           input{
+            font-family: 'Arimo', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            font-style: italic;
+            width: 100%;
+            height: 35px;
+            background: #ffffff !important;
+            border: none;
+            border: 1px solid #757575;
+            padding-left: 10px;
+           }
+           a{
+               i{
+                   color: #03b9ef !important;
+                   margin-left: -45px;
+                   border-left: 1px solid #505050;
+                   padding-left: 10px;
+               }
+           }
+           select{
+            font-family: 'Arimo', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            font-style: italic;
+            width: 145%;
+            height: 35px;
+            background: #ffffff !important;
+            border: none;
+            border: 1px solid #757575;
+            padding-left: 10px;
+           }
+        }
+        .filter__sides{
+            label{
+                font-family: 'Arimo', sans-serif;
+                font-size: 12px;
+                font-weight: 400;
+                color: #444444;
+            }
+        }
+        .number__of__jobs{
+            p{
+                font-family: 'Arimo', sans-serif;
+                font-size: 12px;
+                font-weight: 400;
+                color: #444444;
+            }
+        }
+     
+    }
+    .remote{
+        padding: 20px;
+        text-align: center;
+        background: #f1f1f1;
+        border-radius: 10px;
+        transform: scale(1);
+        transition: .4s;
+        position: relative;
+        @include extra__small{
+            margin-bottom: 80px;
+        }
+        @include small{
+            margin-bottom: 80px;
+        }
+        @include medium{
+            margin-bottom: 80px;
+        }
+        &::after{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 4px;
+            background: #03b9ef;
+            content: "";
+            border-radius: 25px;
+            opacity: 0;
+        }
+        .remote__img{
+            position: relative;
+            width: 200px;
+            height: 150px;
+            margin: 0 auto;
+            span{
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: #03b9ef;
+                top: 50%;
+                right: 0;
+                transform: translate(-50%,-50%);
+                font-family: 'Abril Fatface', cursive;
+                font-size: 18px;
+                color: #ffffff;
+                text-align: center;
+                line-height: 40px;
+
+            }
+            img{
+                width: 70%;
+                border-radius: 50%;
+            }
+        }
+        h4{
+            font-family: 'Arimo', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: #222222;
+        }
+        h5{
+            font-family: 'Arimo', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: #444444;
+            padding-top: 3px;
+        }
+        h6{
+            font-family: 'Arimo', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            color: #444444;
+            padding-top: 5px;
+            padding-bottom: 20px;
+            i{
+                color: #f68b1e;
+                margin-right: 2px;
+            }
+        }
+        ul{
+          padding-top: 5px;
+          margin: 5px 0;
+          border-top: 1px solid #c0c0c0;
+          font-family: 'Arimo', sans-serif;
+          font-size: 14px;
+          font-weight: 700;
+          color: #222222;
+          span{
+              font-size: 20px;
+          }
+        }
+        a{
+            font-size: 20px;
+            font-weight: 500;
+            color: #222222 !important;
+            padding-top: 15px;
+            transition: .4s;
+        }
+        &:hover a{
+            color: #03b9ef !important;
+        }
+        &:hover{
+            -webkit-box-shadow: 0px 0px 15px -4px rgba(0,0,0,0.8); 
+            box-shadow: 0px 0px 15px -4px rgba(0,0,0,0.8);
+            transform: scale(1.05);
+        }
+        &:hover:after{
+          opacity: 1;
+        }
+  
+    }
+    .browse__jobs{
+        margin-top: 50px;
+        h6{
+            font-family: 'Arimo', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            color: #222222;
+            transition: .4s;     
+        }
+        a{
+            font-family: 'Arimo', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            color: #ffffff;
+            background: linear-gradient(90deg, rgba(3,185,239,1) 0%, rgba(87,210,245,1) 100%, rgba(0,212,255,1) 100%);
+            padding: 10px 15px;
+            border-radius: 5px;
+            @include extra__small{
+                font-size: 14px;
+            }
+            @include small{
+                font-size: 16px;
+            }
+            @include medium{
+                font-size: 16px;
+            }
+        }
+    }
+}

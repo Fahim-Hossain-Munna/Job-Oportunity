@@ -1,0 +1,225 @@
+.fixed__menu{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #006d8f !important;
+    border-bottom: 1px solid #03b9ef;
+    transition: .4s;
+    z-index: 9999;
+    box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.46);
+-webkit-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.46);
+-moz-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.46);
+   ul{
+       li{
+           a{
+               color: #ffffff !important;
+               transition: .4s;
+           }
+       }
+   }
+   button{
+    span{
+        i{
+         color: #ffffff !important;
+        }
+    }
+}
+#navbarSupportedContent{
+    @include extra__small{
+        padding-top: 15px;
+        padding-bottom: 50px;
+        background: #006d8f;
+    }
+    @include small{
+        padding-top: 15px;
+        padding-bottom: 50px;
+        background: #006d8f;
+
+    }
+    @include medium{
+        padding-top: 15px;
+        padding-bottom: 50px;
+        background: #006d8f;
+    }
+}
+}
+
+nav{
+    background: transparent !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-top: 5px solid #2cc4f28e;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    @include extra__small{
+        padding-bottom: 15px;
+    }
+    @include small{
+        padding-bottom: 15px;
+    }
+    @include medium{
+        padding-bottom: 15px;
+    }
+    .navbar-toggler:focus{
+        box-shadow: 0 0 0;
+    }
+    button{
+        span{
+            position: relative;
+            i{
+             color: #03b9ef;
+            }
+            .icon__cross{
+                position: absolute;
+                top: 0;
+                left: 20%;
+                display: none;
+            }
+        }
+    }
+    #navbarSupportedContent{
+        @include extra__small{
+            padding-top: 15px;
+            padding-bottom: 50px;
+            background: #015099;
+        }
+        @include small{
+            padding-top: 15px;
+            padding-bottom: 50px;
+            background: #015099;
+
+        }
+        @include medium{
+            padding-top: 15px;
+            padding-bottom: 50px;
+            background: #015099;
+        }
+    }
+ .navbar-brand{
+     img{
+         @include extra__small{
+             width: 50%;
+         }
+         @include small{
+            width: 50%;
+        }
+     }
+ }
+    ul{
+        @include extra__small{
+            text-align: center;
+        }
+        @include small{
+            text-align: center;
+            
+        }
+        @include medium{
+            text-align: center;
+            
+        }
+        li{
+            a{
+                font-family: 'Arimo', sans-serif;
+                font-size: 20px;
+                font-weight: 400;
+                color: #292929 !important;
+                margin-left: 20px;
+                position: relative;
+                transform: .4s;
+                &:hover{
+                    color: #2cc5f2 !important;
+                }
+                &:hover:after{
+                    opacity: 1;
+                }
+                &::after{
+                    width: 100%;
+                    height: 5px;
+                    background: linear-gradient(#006d8f,#03b9ef);
+                    position: absolute;
+                    top: -35px;
+                    left: 0;
+                    content: "";
+                    opacity: 0;
+                    transition: .4s;
+                    @include extra__small{
+                        display: none;
+                    }
+                    @include small{
+                        display: none;
+                    }
+                    @include medium{
+                        display: none;
+                    }
+                }
+                @include extra__small{
+                    color: #ffffff !important;
+                    padding-top: 15px;
+                    margin-left: 0;
+                }
+                @include small{
+                    color: #ffffff !important;
+                    padding-top: 15px;
+                    margin-left: 0;
+                }
+                @include medium{
+                    color: #ffffff !important;
+                    padding-top: 15px;
+                    margin-left: 0;
+                }
+                @include large{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .sign__up{
+        background: linear-gradient(90deg, rgba(3,185,239,1) 0%, rgba(87,210,245,1) 100%, rgba(0,212,255,1) 100%);
+        padding: 20px;
+        margin-left: 25px;
+        border-radius: 8px;
+        @include extra__small{
+            padding: 10px 15px;
+            width: 120px;
+            margin: 0 auto;
+        }
+        @include small{
+            padding: 10px 15px;
+            width: 150px;
+            margin: 0 auto;
+        }
+        @include medium{
+            padding: 15px 24px;
+            width: 170px;
+            margin: 0 auto;
+        }
+        a{
+            font-family: 'Arimo', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            color: #ffffff !important;
+            transition: .4s;
+            @include extra__small{
+               font-size: 14px;
+            }
+            @include small{
+                font-size: 18px;
+             }
+             @include medium{
+                font-size: 18px;
+             }
+             @include large{
+                font-size: 18px;
+             }
+
+            &:hover{
+                background: #002631 !important;
+            }
+         
+        }
+    }
+}

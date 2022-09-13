@@ -1,0 +1,157 @@
+footer{
+    background: #252525;
+    padding: 80px 0;
+    margin-top: 80px;
+    h2{
+        font-size: 24px;
+        font-weight: 400;
+        color: #ffffff;
+        position: relative;
+        &::before{
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 20%;
+            height: 4px;
+            border-radius: 25px;
+            content: "";
+            background: linear-gradient(45deg, rgba(3,185,239,1) 0%, rgba(87,210,245,1) 100%, rgba(0,212,255,1) 100%);
+        }
+    }
+    .ftr__logo{
+        width: 100%;
+         text-align: center;
+         margin-bottom: 50px;
+         img{
+             width: 10%;
+             @include extra__small{
+                 width: 40%;
+             }
+             @include small{
+                width: 30%;
+            }
+            @include medium{
+                width: 20%;
+            }
+         }
+    }
+    p{
+        padding-top: 25px;
+        padding-bottom: 20px;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+    .about__us{
+        p{
+            padding-top: 25px;
+            padding-bottom: 20px;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+        a{  
+            font-family: 'Arimo', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            color: #03b9ef !important;  
+        }
+    }
+
+        ul{
+            padding-top: 25px;
+            li{
+                position: relative;
+                padding-left: 18px;
+                margin-bottom: 10px;
+                transition: .4s;
+                &:hover{
+                    padding-left: 58px;     
+                }
+                &:hover:after{
+                  width: 55px;
+                  border-color: #03b9ef;
+                }
+                &::after{
+                    position: absolute;
+                    top: 50%;
+                    left: -5px;
+                    width: 18px;
+                    height: 2px;
+                    border-radius: 5px;
+                    background: transparent;
+                    content: "";
+                    border-bottom: 2px dashed #ffffff;
+                    transition: .4s;
+                }
+                a{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #ffffff !important;
+                    transform: .2s;
+                    
+                }
+                &:hover a{
+                    color: #03b9ef !important;
+                }
+             
+            }
+        }
+    .newsletter__ftr{
+        @include medium{
+            margin-top: 50px;
+        }
+        form{
+            position: relative;
+            input{
+                font-family: 'Arimo', sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                width: 260px;
+                height: 50px;
+                background: transparent;
+                color: #ffffff;
+                border: 1px solid #03b9ef;
+                padding-left: 10px !important;
+            }
+            button{
+                font-family: 'Arimo', sans-serif;
+                font-size: 20px;
+                font-weight: 400;
+                position:absolute;
+                right: 0px;
+                padding: 5px 15px;
+                height: 50px;
+                background: linear-gradient(#006d8f,#03b9ef);
+                color: #ffffff;
+                border: none;
+               
+            }
+            ::placeholder{
+                font-family: 'Arimo', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                font-style: italic;
+                color: #ffffff !important;
+             
+            }
+        
+        }
+        a{
+            display: inline-block;
+            color: #ffffff !important;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            background: linear-gradient(#006d8f,#03b9ef);
+            border-radius: 50%;
+            margin-right: 5px;
+            margin-top: 25px;
+        }
+    }    
+    
+
+}

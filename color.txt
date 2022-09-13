@@ -1,0 +1,18 @@
+color:
+
+bg__color: #D4ECDD;
+Title__color: #112031;
+button__color: #345B63;
+hover__color: #2cc5f2;
+
+font-family: 'Arimo', sans-serif;
+font-family: 'Abril Fatface', cursive;
+font-family: 'Lobster Two', cursive;
+
+
+<div class="title">
+    <h2>Popular Categories</h2>
+    <p>Creating a beautiful job website is not easy always. 
+      To make your life easier, we are introducing Jobcamp template.
+      Creating a beautiful job website is not easy always. </p>
+</div>
